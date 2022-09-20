@@ -32,3 +32,5 @@ terraform.tfvars
 .terraform*
 metal.yaml
 .vagrant
+*.pem
+.vscode
