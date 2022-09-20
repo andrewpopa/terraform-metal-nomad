@@ -1,0 +1,28 @@
+metal_token   = ""
+project_id    = ""
+nomad_version = "1.3.5"
+consul_version = "1.13.1"
+nomad_cluster = {
+  "amsterdam-1" = {
+    hostname         = "nomad-1"
+    plan             = "c3.small.x86"
+    facilities       = "am6"
+    operating_system = "ubuntu_22_04"
+    billing_cycle    = "hourly"
+  },
+  "madrid-1" = {
+    hostname         = "nomad-3"
+    plan             = "c3.small.x86"
+    facilities       = "md2"
+    operating_system = "ubuntu_22_04"
+    billing_cycle    = "hourly"
+  },
+  "frankfurt-1" = {
+    hostname         = "nomad-4"
+    plan             = "c3.small.x86"
+    facilities       = "fr2"
+    operating_system = "ubuntu_22_04"
+    billing_cycle    = "hourly"
+  },
+}
+cluster_size = 3
